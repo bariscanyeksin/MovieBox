@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_blue">#0D253F</color>
+    <color name="nav_bg">#03101f</color>
+    <color name="colorSelected">#FFFFFF</color>
+    <color name="colorUnselected">#80808080</color>
+    <color name="itemSelected">#FFFFFF</color>
+    <color name="itemUnselected">#80808080</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="yellow">#bfa163</color>
+    <color name="your_ripple_color">#80808080</color>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_page_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/CustomBottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemTextAppearanceActive="@style/FontBottomNavigationView"
+        app:itemTextAppearanceInactive="@style/FontBottomNavigationView"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="button"
+        android:src="@drawable/zar"
+        app:backgroundTint="@color/nav_bg"
+        app:elevation="16dp"
+        app:tint="@color/yellow"
+        app:maxImageSize="32dp"
+        app:layout_anchor="@id/bottom_navigation"
+        app:layout_anchorGravity="center"
+        app:rippleColor="@color/ripple_color"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
