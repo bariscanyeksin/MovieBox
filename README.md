@@ -1,2 +1,6 @@
 # MovieBox
 ![moviebox](https://github.com/user-attachments/assets/5e23856f-39e7-46e0-8f9d-dc2b1c18f9a5)
+
+The Movie Database (TMDB) API kullanarak, Kotlin ile Android telefonlar için bir film ve dizi keşfetme uygulaması geliştirdim. Uygulamada API'dan gelecek json dosyaları için Retrofit kütüphanesi ve görseller için ise Picasso kütüphanesi kullanıldı. Uygulama popüler filmleri ve dizileri gösterirken bu film ve dizilerin çeşitli detaylarını, oyuncu kadrosunu da film/dizi detay sayfasında gösterebiliyor. Aynı zamanda oyuncu detay sayfasında da oyuncunun yer aldığı diziler ve filmler yer alıyor. Bunlara ek olarak uygulama, kullanıcıya dizi/film önerme işlevini de gerçekleştirebiliyor. 
+
+Uygulamanın ilk karşılaşılan arayüzünde TMDB'deki popüler filmler ve diziler kullanıcıyı karşılıyor. Uygulama Fragment temelli olduğu için uygulama içerisinde gezinme işlemleri alt kısımdaki navigation bar ile sağlanıyor. SplashActivity ve MainActivity haricinde herhangi başka Activity kullanılmadığını da belirtmek gerek. Film/dizi detay sayfası ve aktör detay sayfası da Fragment olarak yer alıyor. BottomNavigationView'da yer alan Filmler ve Diziler itemlerinin yanı sıra ortalarında bir buton yer alıyor. Bu buton, kullanıcıya TMDB'nin en çok beğenilenler listelerinden bir film veya dizi önerme butonu olarak kullanılıyor. 
